@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Alg17 {
+    @SuppressWarnings("resource")
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
