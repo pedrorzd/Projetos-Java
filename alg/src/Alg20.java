@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Alg20 {
     @SuppressWarnings({ "resource" })
     public static void main(String[] args){
+        
         float A,B,C;
         Scanner entrada = new Scanner(System.in);
 
