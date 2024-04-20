@@ -3,7 +3,7 @@ public class Alg32 {
 
         int i = 1;
 
-        while (i>100 && i<=200) {
+        while (i >= 100 && i <= 200) {
             System.out.print(i + "\n");
             i++;
         }
