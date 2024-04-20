@@ -1,30 +1,47 @@
 import java.util.Scanner;
 
 public class Alg30 {
+
     public static void main(String[] args) {
-        int mes;
-        Scanner input = new Scanner(System.in);
 
-        System.out.println(
-                "Olá usuário, para saber a quantidade de dias de um més, digite o número dele abaixo: \nExemplo: Março = 3");
-        mes = input.nextInt();
+    	int funcao;
+    	double reajuste, salarioCorrigido,salarioBase;
+    	Scanner input = new Scanner(System.in);
 
-        switch (mes) {
-            case 1:
-            case 3:
-            case 5:
-            case 7:
-            case 9:
-            case 11:
-                System.out.println("O mês informado tem 31 dias.");
-                break;
+    	System.out.println("Olá usúario, para saber seu reajuste, favor insira o código da sua função:\n1 = Gerente\n2 = Vendedor\n3 = Programador\n4 = Motorista\n5 = Vereador\n6 = Deputado.\n\n");
+    	funcao = input.nextInt();
 
-            case 2:
-                System.out.println("O mês informado tem 28/29 dias.");
-                break;
+    	System.out.print("Agora, por favor digite o valor do seu Salário: R$");
+		salarioBase = input.nextFloat();
 
-            default:
-                System.out.println("O mês informado tem 30 dias.");
-        }
+
+		switch(funcao){
+			case 1:
+				reajuste=0.3;
+				salarioCorrigido=((salarioBase*reajuste)+ salarioBase);
+				System.out.println("O valor do salário corrigido é:\nR$"+salarioCorrigido);
+				break;
+
+			case 2:
+				reajuste=0.4;
+				salarioCorrigido=((salarioBase*reajuste)+ salarioBase);
+				System.out.println("O valor do salário corrigido é:\nR$"+salarioCorrigido);
+				break;
+
+			case 3:
+				reajuste=0.5;
+				salarioCorrigido=((salarioBase*reajuste)+ salarioBase);
+				System.out.println("O valor do salário corrigido é:\nR$"+salarioCorrigido);
+				break;
+
+			case 4:
+				reajuste=0.6;
+				salarioCorrigido=((salarioBase*reajuste)+ salarioBase);
+				System.out.println("O valor do salário corrigido é:\nR$"+salarioCorrigido);
+				break;
+
+			default:
+				System.out.print("Seu salário não terá reajuste.");
+		}
     }
 }
